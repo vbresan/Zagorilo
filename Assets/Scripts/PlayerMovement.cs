@@ -23,56 +23,52 @@ public class PlayerMovement : MonoBehaviour
         );
     }
 
-    private bool CanMoveInDirection(ref Vector3 direction) {
+    private Vector3 GetCorrectedDirection(Vector3 direction) {
 
         if (IsNotCollision(direction)) {
-            return true;
+            return direction;
         }
 
         Vector3 directionX = new Vector3(direction.x, 0, 0).normalized;
         if (IsNotCollision(directionX)) {
-            direction = directionX;
-            return true;
+            return directionX;
         }
 
         Vector3 directionZ = new Vector3(0, 0, direction.z).normalized;
         if (IsNotCollision(directionZ)) {
-            direction = directionZ;
-            return true;
+            return directionZ;
         }        
 
-        return false;
+        return Vector3.zero;
     }
 
-    void Start() {
-        inputSystem = new InputSystem();
-        inputSystem.Player.Enable();
+    private void RotatePlayer(Vector3 direction) {
         
+        transform.forward = Vector3.Slerp(
+            transform.forward, 
+            direction, 
+            rotationSpeed * Time.deltaTime
+        );
     }
 
     void Update() {
         
-        Vector2 inputVector = GetInputVector();
-        Vector3 direction   = new Vector3(inputVector.x, 0, inputVector.y);
+        Vector2 input = GameInput.Instance.GetInputVectorNormalized();
 
-        if (CanMoveInDirection(ref direction)) {
-            transform.position += direction * movementSpeed * Time.deltaTime;
+        Vector3 originalDirection  = new Vector3(input.x, 0, input.y);
+        Vector3 correctedDirection = GetCorrectedDirection(originalDirection);
+
+        isWalking = correctedDirection != Vector3.zero;
+        if (isWalking) {
+
+            RotatePlayer(correctedDirection);
+            transform.position += 
+                correctedDirection * movementSpeed * Time.deltaTime;
+
+        } else if (originalDirection != Vector3.zero) {
+            RotatePlayer(originalDirection);
         }
-
-        if (direction != Vector3.zero) {
-            transform.forward = Vector3.Slerp(
-                transform.forward, 
-                direction, 
-                rotationSpeed * Time.deltaTime
-            );
-        }
-
-        isWalking = direction != Vector3.zero;
     }    
-
-    public Vector2 GetInputVector() {
-        return inputSystem.Player.Movement.ReadValue<Vector2>().normalized;
-    }
 
     public bool IsWalking() {
         return isWalking;
