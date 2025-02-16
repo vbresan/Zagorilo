@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public class MedicalEquipment : MonoBehaviour {
+public class StaticEquipment : MonoBehaviour {
+
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private MovableEquipmentSO movableSO;
 
     private Outline outline;
 
@@ -14,16 +17,18 @@ public class MedicalEquipment : MonoBehaviour {
     }
 
     public void Select() {
-        Debug.Log($"Selecting medical equipment: {gameObject.name}");
+        Debug.Log($"Selecting static equipment: {gameObject.name}");
         outline.enabled = true;
     }
 
     public void Unselect() {
-        Debug.Log($"Unselecting medical equipment: {gameObject.name}");
+        Debug.Log($"Unselecting static equipment: {gameObject.name}");
         outline.enabled = false;
     }        
 
     public void Interact() {
-        Debug.Log($"Interacting with medical equipment: {gameObject.name}");
+        Debug.Log($"Interacting with static equipment: {gameObject.name}");
+
+        Instantiate(movableSO.prefab, spawnPoint);
     }
 }

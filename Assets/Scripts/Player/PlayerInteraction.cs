@@ -5,7 +5,7 @@ public class PlayerInteraction : MonoBehaviour {
 
     [SerializeField] private LayerMask layerMask;
     private int interactionDistance = 1;
-    private MedicalEquipment selectedEquipment;
+    private StaticEquipment selectedEquipment;
 
 /*
     public event EventHandler<OnMedicalEquipmentSelectedEventArgs> onMedicalEquipmentSelected;
@@ -21,7 +21,7 @@ public class PlayerInteraction : MonoBehaviour {
         selectedEquipment?.Interact();
     }
 
-    private void SelectEquipment(MedicalEquipment equipment) {
+    private void SelectEquipment(StaticEquipment equipment) {
 
         if (selectedEquipment == null && equipment != null) {
 
@@ -64,7 +64,7 @@ public class PlayerInteraction : MonoBehaviour {
             return;
         }
 
-        MedicalEquipment equipment = hit.transform.GetComponent<MedicalEquipment>();
+        StaticEquipment equipment = hit.transform.GetComponent<StaticEquipment>();
         SelectEquipment(equipment);
     }
 }
