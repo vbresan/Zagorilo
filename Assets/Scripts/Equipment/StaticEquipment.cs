@@ -29,6 +29,11 @@ public class StaticEquipment : MonoBehaviour {
     public void Interact() {
         Debug.Log($"Interacting with static equipment: {gameObject.name}");
 
+        if (movableSO == null) {
+            return;
+        }
+
         Instantiate(movableSO.prefab, spawnPoint);
+        Debug.Log($"Spawned movable equipment: {movableSO.name}");
     }
 }
