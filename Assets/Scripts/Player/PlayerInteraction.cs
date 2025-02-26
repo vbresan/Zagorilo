@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour {
 
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private Transform holdPoint;
     private int interactionDistance = 1;
     private StaticEquipment selectedEquipment;
 

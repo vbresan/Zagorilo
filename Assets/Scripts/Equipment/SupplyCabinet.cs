@@ -11,7 +11,7 @@ public class SupplyCabinet : StaticEquipment {
             return;
         }
 
-        Instantiate(movableSO.prefab, placementPoint);
+        Instantiate(movableSO.prefab, holdPoint);
         Debug.Log($"Spawned movable equipment: {movableSO.name}");
     }
 }

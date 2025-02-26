@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class StaticEquipment : MonoBehaviour {
 
-    [SerializeField] protected Transform placementPoint;
+    [SerializeField] protected Transform holdPoint;
 
     private Outline outline;
 

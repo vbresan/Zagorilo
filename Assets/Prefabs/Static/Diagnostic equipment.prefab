@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ec857efccb32f6e899ce2742c4b80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placementPoint: {fileID: 7671308915820323256}
+  holdPoint: {fileID: 7671308915820323256}
 --- !u!1 &8468649805951153568
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7671308915820323256}
   m_Layer: 6
-  m_Name: Placement point
+  m_Name: Hold point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -726,14 +726,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: ef4bd89fab6fea510ac7f5db1f073c1a, type: 2}
-    - target: {fileID: 0}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: ef4bd89fab6fea510ac7f5db1f073c1a, type: 2}
     - target: {fileID: 1350538872062370034, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.34
@@ -774,6 +766,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: ef4bd89fab6fea510ac7f5db1f073c1a, type: 2}
     - target: {fileID: 6331824541731423322, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_Name
       value: Medical supply cabinet (medication - heart)
@@ -980,14 +976,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 5c565f2226ecf59c895f7cd92da6f0ed, type: 2}
-    - target: {fileID: 0}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 5c565f2226ecf59c895f7cd92da6f0ed, type: 2}
     - target: {fileID: 1350538872062370034, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -1028,6 +1016,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c565f2226ecf59c895f7cd92da6f0ed, type: 2}
     - target: {fileID: 6331824541731423322, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_Name
       value: Medical supply cabinet (medication - antihistamine)
@@ -1191,7 +1183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ec857efccb32f6e899ce2742c4b80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placementPoint: {fileID: 0}
+  holdPoint: {fileID: 0}
 --- !u!1001 &1560401149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1200,14 +1192,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 4117f898ae354bc75b57534f4a9eac10, type: 2}
-    - target: {fileID: 0}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 4117f898ae354bc75b57534f4a9eac10, type: 2}
     - target: {fileID: 1350538872062370034, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4
@@ -1248,6 +1232,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4117f898ae354bc75b57534f4a9eac10, type: 2}
     - target: {fileID: 6331824541731423322, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_Name
       value: Medical supply cabinet (injection - epinephrine)
@@ -1585,6 +1573,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4640805022372236172, guid: 1e08dec86bf9d23e7b993d6e0d61d37d, type: 3}
   m_PrefabInstance: {fileID: 1784124355}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1851582424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1851582425}
+  m_Layer: 0
+  m_Name: Hold point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1851582425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851582424}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2101241332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1885457107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1650,18 +1669,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: efd714439d379cf2b903a3091bcd2fa0, type: 2}
-    - target: {fileID: 0}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: efd714439d379cf2b903a3091bcd2fa0, type: 2}
-    - target: {fileID: 0}
-      propertyPath: equipmentSO
-      value: 
-      objectReference: {fileID: 11400000, guid: efd714439d379cf2b903a3091bcd2fa0, type: 2}
     - target: {fileID: 1350538872062370034, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.83
@@ -1702,6 +1709,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: efd714439d379cf2b903a3091bcd2fa0, type: 2}
     - target: {fileID: 6331824541731423322, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_Name
       value: Medical supply cabinet (fluid)
@@ -1984,6 +1995,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1638642315}
+  - {fileID: 1851582425}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2101241333
@@ -2015,6 +2027,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+  holdPoint: {fileID: 1851582425}
 --- !u!1 &242574686051468837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,14 +2139,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 5ab1c2fdf5091fed6ae361c1b374b97f, type: 2}
-    - target: {fileID: 0}
-      propertyPath: movableSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 5ab1c2fdf5091fed6ae361c1b374b97f, type: 2}
     - target: {fileID: 1350538872062370034, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2174,6 +2179,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ab1c2fdf5091fed6ae361c1b374b97f, type: 2}
     - target: {fileID: 6331824541731423322, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: m_Name
       value: Medical supply cabinet (bandages)
