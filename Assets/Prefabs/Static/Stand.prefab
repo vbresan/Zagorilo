@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6058137362700796672}
   m_Layer: 6
-  m_Name: Spawn Point
+  m_Name: Placement point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,4 +153,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ec857efccb32f6e899ce2742c4b80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 6058137362700796672}
+  placementPoint: {fileID: 0}

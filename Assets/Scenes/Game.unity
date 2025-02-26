@@ -726,7 +726,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: -5767407579489766807, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: ef4bd89fab6fea510ac7f5db1f073c1a, type: 2}
+    - target: {fileID: 0}
       propertyPath: movableSO
       value: 
       objectReference: {fileID: 11400000, guid: ef4bd89fab6fea510ac7f5db1f073c1a, type: 2}
@@ -976,7 +980,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: -5767407579489766807, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c565f2226ecf59c895f7cd92da6f0ed, type: 2}
+    - target: {fileID: 0}
       propertyPath: movableSO
       value: 
       objectReference: {fileID: 11400000, guid: 5c565f2226ecf59c895f7cd92da6f0ed, type: 2}
@@ -1183,8 +1191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ec857efccb32f6e899ce2742c4b80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  movableSO: {fileID: 0}
+  placementPoint: {fileID: 0}
 --- !u!1001 &1560401149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1193,7 +1200,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: -5767407579489766807, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4117f898ae354bc75b57534f4a9eac10, type: 2}
+    - target: {fileID: 0}
       propertyPath: movableSO
       value: 
       objectReference: {fileID: 11400000, guid: 4117f898ae354bc75b57534f4a9eac10, type: 2}
@@ -1639,11 +1650,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: -5767407579489766807, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
       propertyPath: movableSO
       value: 
       objectReference: {fileID: 11400000, guid: efd714439d379cf2b903a3091bcd2fa0, type: 2}
-    - target: {fileID: -5767407579489766807, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+    - target: {fileID: 0}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: efd714439d379cf2b903a3091bcd2fa0, type: 2}
+    - target: {fileID: 0}
       propertyPath: equipmentSO
       value: 
       objectReference: {fileID: 11400000, guid: efd714439d379cf2b903a3091bcd2fa0, type: 2}
@@ -2111,7 +2126,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582684850652830879}
     m_Modifications:
-    - target: {fileID: -5767407579489766807, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+    - target: {fileID: 6023539171168290258, guid: 22abb34eda7c10d21884a6afb63771a1, type: 3}
+      propertyPath: movableSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ab1c2fdf5091fed6ae361c1b374b97f, type: 2}
+    - target: {fileID: 0}
       propertyPath: movableSO
       value: 
       objectReference: {fileID: 11400000, guid: 5ab1c2fdf5091fed6ae361c1b374b97f, type: 2}

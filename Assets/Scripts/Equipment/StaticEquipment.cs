@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class StaticEquipment : MonoBehaviour {
 
-    [SerializeField] private Transform spawnPoint;
-    [SerializeField] private MovableEquipmentSO movableSO;
+    [SerializeField] protected Transform placementPoint;
 
     private Outline outline;
 
@@ -26,14 +25,7 @@ public class StaticEquipment : MonoBehaviour {
         outline.enabled = false;
     }        
 
-    public void Interact() {
+    public virtual void Interact() {
         Debug.Log($"Interacting with static equipment: {gameObject.name}");
-
-        if (movableSO == null) {
-            return;
-        }
-
-        Instantiate(movableSO.prefab, spawnPoint);
-        Debug.Log($"Spawned movable equipment: {movableSO.name}");
     }
 }
