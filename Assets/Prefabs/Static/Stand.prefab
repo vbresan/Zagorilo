@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8220532123413338661}
   - component: {fileID: 1909235160613957902}
   - component: {fileID: 1065461675135031345}
-  - component: {fileID: -5767407579489766807}
+  - component: {fileID: 6825680503145648757}
   m_Layer: 6
   m_Name: Stand
   m_TagString: Untagged
@@ -141,7 +141,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-5767407579489766807
+--- !u!114 &6825680503145648757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6331824541731423322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0ec857efccb32f6e899ce2742c4b80b, type: 3}
+  m_Script: {fileID: 11500000, guid: a9ad815f467932dd58a6e33e2f4e92dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   holdPoint: {fileID: 6058137362700796672}

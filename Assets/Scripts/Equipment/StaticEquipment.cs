@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class StaticEquipment : MonoBehaviour {
 
-    [SerializeField] protected Transform holdPoint;
-
     private Outline outline;
 
     void Awake() {
@@ -25,7 +23,7 @@ public class StaticEquipment : MonoBehaviour {
         outline.enabled = false;
     }        
 
-    public virtual void Interact() {
+    public virtual void Interact(PlayerInteraction player) {
         Debug.Log($"Interacting with static equipment: {gameObject.name}");
     }
 }

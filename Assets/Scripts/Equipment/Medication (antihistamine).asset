@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43886fe1aff423fa2895126c25b22919, type: 3}
   m_Name: Medication (antihistamine)
   m_EditorClassIdentifier: 
-  prefab: {fileID: 83284156601480664, guid: b6871a25a56bb01ff86a59d8adf9d8e3, type: 3}
+  prefab: {fileID: 106150759706596580, guid: b6871a25a56bb01ff86a59d8adf9d8e3, type: 3}

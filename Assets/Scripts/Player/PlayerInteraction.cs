@@ -1,16 +1,17 @@
 using System;
 using UnityEngine;
 
-public class PlayerInteraction : MonoBehaviour {
+public class PlayerInteraction : MonoBehaviour, IMovableEquipmentHolder {
 
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private Transform holdPoint;
     private int interactionDistance = 1;
     private StaticEquipment selectedEquipment;
+    private GameObject movableEquipment;
 
 
     private void OnPlayerInteraction(object sender, EventArgs e) {
-        selectedEquipment?.Interact();
+        selectedEquipment?.Interact(this);
     }
 
     private void SelectEquipment(StaticEquipment equipment) {
@@ -52,4 +53,20 @@ public class PlayerInteraction : MonoBehaviour {
         StaticEquipment equipment = hit.transform.GetComponent<StaticEquipment>();
         SelectEquipment(equipment);
     }
+
+    public Transform GetHoldPoint() {
+        return holdPoint;
+    }
+
+    public void SetMovableEquipment(GameObject movableEquipment) {
+        this.movableEquipment = movableEquipment;
+    }
+
+    public GameObject GetMovableEquipment() {
+        return movableEquipment;
+    }
+
+    public bool HasMovableEquipment() {
+        return movableEquipment != null;
+    }    
 }

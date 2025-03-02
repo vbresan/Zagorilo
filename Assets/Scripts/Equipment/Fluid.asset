@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43886fe1aff423fa2895126c25b22919, type: 3}
   m_Name: Fluid
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4640805022372236172, guid: f0d6ed820df584b1b80b45cc6d619fa3, type: 3}
-  name: Fluid
+  prefab: {fileID: 1833809801889110769, guid: f0d6ed820df584b1b80b45cc6d619fa3, type: 3}

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43886fe1aff423fa2895126c25b22919, type: 3}
   m_Name: Injection (epinephrine)
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2848931032271901022, guid: a51bd153235b53300a3396fb65622754, type: 3}
+  prefab: {fileID: 4785991754478579394, guid: a51bd153235b53300a3396fb65622754, type: 3}
