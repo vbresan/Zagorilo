@@ -8,15 +8,6 @@ public class PlayerInteraction : MonoBehaviour {
     private int interactionDistance = 1;
     private StaticEquipment selectedEquipment;
 
-/*
-    public event EventHandler<OnMedicalEquipmentSelectedEventArgs> onMedicalEquipmentSelected;
-    public class OnMedicalEquipmentSelectedEventArgs : EventArgs { 
-
-        public MedicalEquipment medicalEquipment;
-
-
-    }
-*/    
 
     private void OnPlayerInteraction(object sender, EventArgs e) {
         selectedEquipment?.Interact();
@@ -38,13 +29,6 @@ public class PlayerInteraction : MonoBehaviour {
                 selectedEquipment.Select();
             }
         }
-
-/*
-        selectedEquipment = equipment;
-        onMedicalEquipmentSelected?.Invoke(this, new OnMedicalEquipmentSelectedEventArgs {
-            medicalEquipment = equipment
-        });
-*/        
     }
 
     void Start() {
